@@ -1,0 +1,14 @@
+#list{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-color: rgb(0, 0, 0);
+}
+#block{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: red;
+
+}

@@ -4,20 +4,20 @@ function Animation(){
     let top = 0;
     let time = setInterval (frame, 2);
     let speed_top = 0;
-    let speed_left = 1;
+    let speed_left = 10;
     function frame(){
         if(pos==0 && top==0){
-        speed_left = 1;
+        speed_left = 10;
         speed_top = 0;
         }else if(pos==700 && top==0){
         speed_left = 0;
-        speed_top = 1;
+        speed_top = 10;
         }else if(pos==700 && top==700){
-        speed_left = -1;
+        speed_left = -10;
         speed_top = 0;
         }else if(pos==0 && top==700){
         speed_left = 0;
-        speed_top = -1;
+        speed_top = -10;
         }
         top+= speed_top;
         elem.style.top = top + "px";
